@@ -18,6 +18,13 @@ const bebas = localFont({
   src: [
     {
       path: "../public/fonts/FuturaHeavy.ttf",
+      weight: "600",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/futuraLight.ttf",
+      weight: "200",
+      style: "normal",
     },
   ],
   variable: "--font-bebas",

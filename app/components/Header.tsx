@@ -5,8 +5,8 @@ import { AiOutlineYoutube } from "react-icons/ai";
 
 const Header = () => {
   return (
-    <header className="text-white w-screen fixed top-0 grid place-items-center h-20">
-      <div className="navbar px-4 sm:px-8">
+    <header className="text-white w-screen fixed top-0 grid place-items-center h-20 z-50">
+      <div className="navbar px-4 sm:px-8 w-full max-w-[1400px]">
         <div className="flex-1 flex items-center gap-16 text-ttn-light">
           <Link
             href={"/"}
