@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+.splide__slide.photo {
+  height: 100vh;  
+  max-height: 600px;
+}

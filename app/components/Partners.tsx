@@ -17,52 +17,29 @@ const Partners = () => {
     { name: "MUSIC ACROSS BORDERS", image: "/images/partners/mab-logo.png" },
   ];
   return (
-    <div
-      className={`w-full max-w-[1400px] mx-auto py-14 relative -translate-y-40 border-x-ttn-light/10 ${afterStyle} ${beforeStyle}`}
-    >
-      <Marquee gradient={true} gradientColor={[13, 13, 13]} speed={30}>
-        {clients
-          //   .filter((x, i) => i < 5)
-          .map(({ name, image }) => (
-            <div className="flex items-center gap-2 mx-8 grayscale">
-              <Image
-                src={image}
-                alt={""}
-                width={40}
-                height={40}
-                className="h-8 object-contain"
-              />
-              <h2 className="font-heading text-xl font-thin text-ttn-light/60">
-                {name}
-              </h2>
-            </div>
-          ))}
-      </Marquee>
-      {/* <Marquee
-        gradient={true}
-        gradientColor={[13, 13, 13]}
-        direction="right"
-        speed={30}
-        className="mt-8"
+    <section className="w-full -translate-y-20 xl:-translate-y-40">
+      <p className="mx-auto w-fit text-xs xl:text-sm">you're in good company</p>
+      <div
+        className={`w-full max-w-[1400px] mx-auto py-14 relative  border-x-ttn-light/10 ${afterStyle} ${beforeStyle}`}
       >
-        {clients
-          .filter((x, i) => i >= 5)
-          .map(({ name, image }) => (
-            <div className="flex items-center gap-2 mx-8 grayscale">
+        <Marquee gradient={true} gradientColor={[13, 13, 13]} speed={30}>
+          {clients.map(({ name, image }) => (
+            <div className="flex items-center gap-2 mx-4 xl:mx-8 grayscale">
               <Image
                 src={image}
                 alt={""}
                 width={40}
                 height={40}
-                className="h-8 object-contain"
+                className="h-6 xl:h-8 object-contain"
               />
-              <h2 className="font-heading text-xl font-thin text-ttn-light/60">
+              <h2 className="font-heading text-sm xl:text-xl font-thin text-ttn-light/60">
                 {name}
               </h2>
             </div>
           ))}
-      </Marquee> */}
-    </div>
+        </Marquee>
+      </div>
+    </section>
   );
 };
 

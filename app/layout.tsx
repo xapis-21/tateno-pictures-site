@@ -43,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-ttn-black">
       <body
-        className={`${lato.variable} ${bebas.variable} ${oswald.variable} font-body `}
+        className={`${lato.variable} ${bebas.variable} ${oswald.variable} font-body w-screen overflow-x-hidden`}
       >
         <Header />
         {children}
