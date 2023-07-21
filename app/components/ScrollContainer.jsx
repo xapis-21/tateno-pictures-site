@@ -55,6 +55,7 @@ const ScrollContainer = () => {
   const splideOptions = {
     perPage: 1,
     autoWidth: true,
+    lazyload: true,
     direction: "ltr",
     perMove: 1,
     gap: "1rem",
@@ -63,12 +64,14 @@ const ScrollContainer = () => {
     },
     breakpoints: {
       640: {
-        perPage: 1,
         gap: "0.5rem",
+        fixedWidth: 300,
+        arrows: false,
       },
       768: {
-        perPage: 2,
+        // perPage: 2,
         heightRatio: 1,
+
         autoWidth: false,
         autoHeigth: true,
         padding: {

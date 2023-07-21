@@ -17,7 +17,7 @@ const Partners = () => {
     { name: "MUSIC ACROSS BORDERS", image: "/images/partners/mab-logo.png" },
   ];
   return (
-    <section className="w-full -translate-y-20 xl:-translate-y-40">
+    <section className="w-full -translate-y-14 xl:-translate-y-40">
       <p className="mx-auto w-fit text-xs xl:text-sm">you're in good company</p>
       <div
         className={`w-full max-w-[1400px] mx-auto py-14 relative  border-x-ttn-light/10 ${afterStyle} ${beforeStyle}`}

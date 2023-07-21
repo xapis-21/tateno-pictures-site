@@ -9,10 +9,10 @@ export default function Home() {
       <Hero />
       <Partners />
       {/* <Projects /> */}
-      <section className="-translate-y-40">
+      <section className="-translate-y-8 xl:-translate-y-40 ">
         <div className="max-w-[1400px] mx-auto">
-          <h1 className="font-heading font-bold text-6xl py-14 text-ttn-light">
-            Our Work
+          <h1 className="font-heading font-bold px-4 mb-4 pl-8 text-2xl md:text-4xl  xl:text-6xl py-4 xl:py-14 text-ttn-light">
+            OUR WORK
           </h1>
         </div>
         <ScrollContainer />
